@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+
+$color-pale_blue: hsl(225, 100%, 94%);
+$color-pale_blue--2: hsl(225, 100%, 98%);
+
+$color-bright_blue: hsl(245, 75%, 52%);
+$color-desaturated_blue: hsl(224, 23%, 55%);
+$color-dark_blue: hsl(223, 47%, 23%);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+html {
+  font-size: 62.5%; // 10px
+}
+
+.container {
+  display: flex;
+  background-color: $color-pale_blue;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  background-color: $color-pale_blue--2;
+  border-radius: 2rem;
+  text-align: center;
+  width: 35rem;
+  .img-area img {
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    width: 100%;
+  }
+  .text-area {
+    .text-header {
+      font-size: 1.25rem;
+      padding-top: 2rem;
+    }
+    .text-content {
+      width: 100%;
+      color: $color-desaturated_blue;
+      font-size: 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-block: 1rem;
+      p {
+        width: 30rem;
+        line-height: 2.5rem;
+      }
+    }
+    .text-card {
+      background-color: #d6d9f139;
+      padding: 1.5rem;
+      width: 80%;
+      border-radius: 2rem;
+      margin-left: 4rem;
+      .card-left {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &-content {
+          h5 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding-bottom: 0.3rem;
+          }
+          span {
+            font-size: 1.4rem;
+            color: $color-desaturated_blue;
+          }
+        }
+        img {
+          padding-right: 1rem;
+        }
+      }
+      .card-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 5rem;
+        &-content {
+          span {
+            font-size: 1.25rem;
+            font-weight: 700;
+            text-decoration: underline;
+            color: $color-bright_blue;
+            cursor: pointer;
+            &:hover {
+              text-decoration: none;
+              color: $color-desaturated_blue;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .card-button {
+    padding-block: 2rem;
+    button {
+      background-color: $color-bright_blue;
+      color: white;
+      font-weight: 700;
+      letter-spacing: 0.15rem;
+      padding: 1.5rem 8rem;
+      border-radius: 1rem;
+      border: none;
+      cursor: pointer;
+    }
+  }
+
+  .card-link {
+    a {
+      text-decoration: none;
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: $color-desaturated_blue;
+    }
+    padding-bottom: 3rem;
+  }
+}
