@@ -32,6 +32,7 @@ html {
   border-radius: 2rem;
   text-align: center;
   width: 35rem;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.19);
   .img-area img {
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
@@ -56,11 +57,15 @@ html {
       }
     }
     .text-card {
-      background-color: #d6d9f139;
-      padding: 1.5rem;
-      width: 80%;
-      border-radius: 2rem;
-      margin-left: 4rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 35rem;
+      .text-container {
+        background-color: #d6d9f139;
+        padding: 2rem;
+        border-radius: 2rem;
+      }
       .card-left {
         display: flex;
         justify-content: center;
@@ -104,15 +109,22 @@ html {
 
   .card-button {
     padding-block: 2rem;
+
     button {
       background-color: $color-bright_blue;
       color: white;
+      box-shadow: 1px 9px 15px 5px rgba(0, 0, 0, 0.25);
       font-weight: 700;
       letter-spacing: 0.15rem;
-      padding: 1.5rem 8rem;
+      padding: 1.5rem 6rem;
       border-radius: 1rem;
       border: none;
       cursor: pointer;
+      transition: all 0.2s;
+      &:hover {
+        transition: all 0.2s;
+        background-color: rgba(103, 27, 141, 0.893);
+      }
     }
   }
 
@@ -122,6 +134,11 @@ html {
       font-size: 1.5rem;
       font-weight: 900;
       color: $color-desaturated_blue;
+      transition: all 0.2s;
+      &:hover {
+        color: black;
+        transition: all 0.2s;
+      }
     }
     padding-bottom: 3rem;
   }
