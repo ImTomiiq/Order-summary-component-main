@@ -21,11 +21,12 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url(pattern-background-desktop.svg);
   background-position: 0 -9rem;
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: #e0e8ff;
 }
 

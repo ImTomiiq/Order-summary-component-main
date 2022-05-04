@@ -13,7 +13,6 @@ $color-dark_blue: hsl(223, 47%, 23%);
   box-sizing: border-box;
   font-family: "Red Hat Display", sans-serif;
 }
-
 html {
   font-size: 62.5%; // 10px
 }
@@ -22,11 +21,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   background-image: url(pattern-background-desktop.svg);
   background-position: 0 -9rem;
   background-repeat: no-repeat;
+  background-size: contain;
   background-color: hsl(225, 100%, 94%);
 }
 .card {
